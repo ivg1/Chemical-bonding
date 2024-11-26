@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/*
+.roboto-mono-<uniquifier> {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+body {
+    margin: 0;
+    background-color: #212121;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(21,21,21,0.2);
+    backdrop-filter: blur(20px);
+    z-index: 3;
+}
+.title, .links{
+    margin: 0 10px;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.links a:hover{
+    color: orange;
+}
+.title {
+    font-size: 30px;
+}
+
+.main{
+    max-width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+.main_item{
+    /* border: 1px solid red; */
+    margin: 60px 0 0 0;
+}
+.whats_this{
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+}
+.bg{
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+.welcome_phrase{
+    font-size: 40px;
+    height: 70vh;
+    width: 55vw;
+    padding: 30px;
+}
+.welcome_phrase h1{
+    z-index: 2;
+}
+.molecule_img{
+    width: 40vw;
+    height: 70vh;
+    padding: 30px;
+    margin: 0 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.molecule_img img{
+    transform: translate(0px, 60px) scale(0.4);
+    z-index: 1;
+}
+.rainbow-text {
+    background: linear-gradient(to right, red, green, blue, red, green);
+    background-size: 400% 400%;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    animation: rainbow_spin 5s linear infinite;
+}
+@keyframes rainbow_spin {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+}
+.the_periodic_table{
+    min-width: 300px;
+    height: 120vh;
+    padding: 10px;
+}
+.title{
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+.table_wrapper{
+    width: 100%;
+    height: 100vh;
+    margin: 20px 0;
+}
+.element {
+    width: 5.5%; /* 30px */
+    height: 5.5%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+    transition: transform 0.2s;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.element:hover{
+    transform: scale(1.5);
+    border: 0.5px solid white;
+    cursor:pointer
+}
+.periodic_group{
+    width: 5.5%; /* 30px */
+    height: 5.5%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+}
+.empty_cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+}
+.nucleon {
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(189, 189, 189);
+}
+.mass {
+    font-size: 8px;
+    color: rgb(189, 189, 189);
+}
+
+.nonmetals{
+    background-color: #2a4165;
+}
+.nobleGases{
+    background-color: #623842;
+}
+.alkaliMetals{
+    background-color: #244d57;
+}
+.alkalineEarthMetals{
+    background-color: #622e39;
+}
+.metalloids{
+    background-color: #523e1b;
+}
+.halogens{
+    background-color: #660066;
+}
+.postTransitionMetals{
+    background-color: #2f4d47;
+}
+.transitionMetals{
+    background-color: #433c65;
+}
+.lanthanides{
+    background-color: #004a77;
+}
+.actinides{
+    background-color: #613b28;
+}
+
+.what_to_do{
+    margin: 10px;
+    padding: 10px;
+    border-top: 2px solid white;
+    text-decoration: wavy;
+}
+.covalent_bonding, .ionic_bonding, .metallic_bonding{
+    height: auto;
+    padding: 20px;
+}
+.description{
+    margin: 20px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.O_example_image, .NaCl_example_image{
+    filter: invert(1);
+    transform: scale(0.5);
+    margin: 0;
+}
+.Mg_example_image{
+    filter: invert(1);
+    transform: scale(0.5);
+    margin: -150px 0;
+}
+.undecorated_link{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+#mobile-message {
+    display: none;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    font-size: 16px;
+    border: 1px solid black;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+    .title {
+        font-size: 25px;
+    }
+    .welcome_phrase{
+        font-size: 35px;
+    }
+}
+@media (max-width: 1050px) {
+    .title {
+        font-size: 20px;
+    }
+    .welcome_phrase{
+        font-size: 30px;
+    }
+} 
+@media (max-width: 768px) {
+    .title {
+        font-size: 16px;
+    }
+    .welcome_phrase{
+        font-size: 30px;
+    }
+}
+@media (max-width: 480px){
+    .welcome_phrase{
+        font-size: 20px;
+    }
+}

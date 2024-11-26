@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical bonding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="title">Chemistry</div>
+        <div class="links">
+            <a href="#periodic" data-target="the_periodic_table">Periodic table</a> |
+            <a href="#covalent" data-target="covalent_bonding">Covalent bonding</a> |
+            <a href="#ionic" data-target="ionic_bonding">Ionic bonding</a> |
+            <a href="#metallic" data-target="metallic_bonding">Metallic bonding</a>
+        </div>
+    </header>
+    <div class="main">
+        <div class="whats_this main_item">
+            <div class="welcome_phrase bg"><h1>Discover the beauty of <span class="rainbow-text">chemical bonding</span></h1></div>
+            <div class="molecule_img bg"><img src="images/caffeine_atom.webp" draggable="false"></div>
+        </div>
+        <div class="the_periodic_table main_item bg">
+            <div class="title">Periodic table</div>
+            <table class="table_wrapper">
+                <tr>
+                    <th class="periodic_group">1</th>
+                    <th class="periodic_group">2</th>
+                    <th class="periodic_group">3</th>
+                    <th></th>
+                    <th class="periodic_group">4</th>
+                    <th class="periodic_group">5</th>
+                    <th class="periodic_group">6</th>
+                    <th class="periodic_group">7</th>
+                    <th class="periodic_group">8</th>
+                    <th class="periodic_group">9</th>
+                    <th class="periodic_group">10</th>
+                    <th class="periodic_group">11</th>
+                    <th class="periodic_group">12</th>
+                    <th class="periodic_group">13</th>
+                    <th class="periodic_group">14</th>
+                    <th class="periodic_group">15</th>
+                    <th class="periodic_group">16</th>
+                    <th class="periodic_group">17</th>
+                    <th class="periodic_group">18</th>
+                </tr>
+            </table>
+            <div class="what_to_do"><i>(coming soon) click on an element for information</i></div>
+        </div>
+        <div class="covalent_bonding main_item bg">
+            <div class="title">Covalent bonding</div>
+            <div class="description">
+                Covalent bonding is when two or more elements share pairs of electrons in order to achieve a full outer shell<br>(they will become stable and stable is good).<br>
+                This type of bonding occurs only between nonmetals.
+                <br><br>
+                Lets see an example for 2 oxygen atoms (both nonmetal):<br>
+                <img src="images/oxygen_example.png" draggable="false" class="O_example_image">
+                On the left side of the diagram, each oxygen atom has 6 electrons in its outer shell. Since an outer shell can hold a maximum of 8 electrons, this means each oxygen atom needs 2 more electrons to fill its shell.
+                <br><br>
+                On the other side, the 2 oxygen atoms decided to share 2 pairs of electrons. By sharing like this, they both achieve a full outer shell with 8 electrons.
+                <br><br>
+                Why did they share 2 pairs of electrons instead of just 1 pair?<br> If the oxygens only shared 1 pair of electrons (1 electron from each atom), they would each have 7 electrons in their outer shell—not enough to reach 8. So, they decided to share another pair of electrons, which allows them to achieve their goal of 8 electrons in their outer shell.
+                <br><br>    
+                If you count up all the electrons around each oxygen atom (their own + the shared ones), you'll see that they both have 8 electrons now.
+            </div>
+        </div>
+        <div class="ionic_bonding main_item bg">
+            <div class="title">Ionic bonding</div>
+            <div class="description">
+                Ionic bonding is when two or more elements gain or lose electrons in order to achieve a full outer shell<br><br>
+                This type of bonding occurs between nonmetals + metals. Since metals tend to lose electrons and nonmetals gain.
+                <br><br>
+                Lets see an example for sodium chloride (table salt):<br>
+                <img src="images/NaCl_example.png" draggable="false" class="NaCl_example_image">
+                On the left side of the diagram, you can see that a sodium atom has 1 electron in its outer shell. Since an outer shell needs 8 electrons to be full, sodium doesn’t need this electron—it actually wants to get rid of it to have a completely full outer shell below it.
+                <br><br>
+                Meanwhile, the chlorine atom has 7 electrons in its outer shell and it will only nees to gain 1 electron to achieve a full outer shell.
+                <br><br>
+                But instead of sharing their electrons, sodium will give away its 1 useless electron to chlorine who needs it. On the right side of the diagram, they will both have full outer shells. This is called an ionic bond.
+            </div>
+        </div>
+        <div class="metallic_bonding main_item bg">
+            <div class="title">Metallic bonding</div>
+            <div class="description">
+                Metallic bonding is when a metal loses electrons and becomes an ion to achieve a full outer shell<br><br>
+                This type of bonding occurs between metals + delocalised electrons. The delocalised electrons are the electrons the metal ions lost.
+                <br><br>
+                Lets see an example for magnesium:<br>
+                <img src="images/metallic_magnesium.png" draggable="false" class="Mg_example_image">
+                On the diagram the magnesium ions are the ones labeled by "+". The delocalised electrons, also called "the sea of delocalised electrons", are the smaller circles, and they have a negative charge.
+                <br><br>
+                These two make a metallic bond. The magnesium has a positive charge and is attracted the delocalised electrons.
+                <br><br>
+                Overall, instead of exchanging electrons, the magnesium atoms lost electrons and those electrons started moving freely between the now magnesium ions.
+            </div>
+        </div>
+        <div class="footer">
+            <h4 style="text-align: center; margin: 0px; padding: 10px;">Based on IGCSE Chemistry</h4>
+        </div>
+    </div>
+    <div id="mobile-message">
+        Due to you being on mobile, your experience might not be the best due to the unfinished responsiveness of this page.
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/make_links_work.js"></script>
+    <script src="js/periodic_table_related.js"></script>
+</body>
+</html>
