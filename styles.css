@@ -344,7 +344,19 @@ header{
 .list_of_characteristics{
     margin: 0;
 }
-
+.button_to_top{
+    border-radius: 50%;
+    background-color: rgb(48, 48, 48);
+    display: none;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid white;
+    transition: opacity 0.4s;
+}
 
 /* responsive */
 #mobile_message{
